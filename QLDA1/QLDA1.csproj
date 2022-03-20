@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E0F50674-F5EE-453F-A8C0-E61C7B204794}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QLDA1</RootNamespace>
+    <AssemblyName>QLDA1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fnc\functions.cs" />
+    <Compile Include="FrmCanTien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCanTien.Designer.cs">
+      <DependentUpon>FrmCanTien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDieuChuyenQuy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDieuChuyenQuy.Designer.cs">
+      <DependentUpon>FrmDieuChuyenQuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDieuChuyenTienKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDieuChuyenTienKho.Designer.cs">
+      <DependentUpon>FrmDieuChuyenTienKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFldCanTien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFldCanTien.Designer.cs">
+      <DependentUpon>FrmFldCanTien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFldDieuChuyenKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFldDieuChuyenKho.Designer.cs">
+      <DependentUpon>FrmFldDieuChuyenKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFldHachToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFldHachToan.Designer.cs">
+      <DependentUpon>FrmFldHachToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFldNopRut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFldNopRut.Designer.cs">
+      <DependentUpon>FrmFldNopRut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFldTransManaEdit1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFldTransManaEdit1.Designer.cs">
+      <DependentUpon>FrmFldTransManaEdit1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFldTransMana.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFldTransMana.Designer.cs">
+      <DependentUpon>FrmFldTransMana.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFldDieuChuyenQuy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFldDieuChuyenQuy.Designer.cs">
+      <DependentUpon>FrmFldDieuChuyenQuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHachToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHachToan.Designer.cs">
+      <DependentUpon>FrmHachToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNopRut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNopRut.Designer.cs">
+      <DependentUpon>FrmNopRut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTransMana.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTransMana.Designer.cs">
+      <DependentUpon>FrmTransMana.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmCanTien.resx">
+      <DependentUpon>FrmCanTien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDieuChuyenQuy.resx">
+      <DependentUpon>FrmDieuChuyenQuy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDieuChuyenTienKho.resx">
+      <DependentUpon>FrmDieuChuyenTienKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFldCanTien.resx">
+      <DependentUpon>FrmFldCanTien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFldDieuChuyenKho.resx">
+      <DependentUpon>FrmFldDieuChuyenKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFldHachToan.resx">
+      <DependentUpon>FrmFldHachToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFldNopRut.resx">
+      <DependentUpon>FrmFldNopRut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFldTransManaEdit1.resx">
+      <DependentUpon>FrmFldTransManaEdit1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFldTransMana.resx">
+      <DependentUpon>FrmFldTransMana.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFldDieuChuyenQuy.resx">
+      <DependentUpon>FrmFldDieuChuyenQuy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHachToan.resx">
+      <DependentUpon>FrmHachToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNopRut.resx">
+      <DependentUpon>FrmNopRut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTransMana.resx">
+      <DependentUpon>FrmTransMana.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnSua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnXoa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnThoat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnLuu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnHuy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\101543831_2815261611928947_2364246854972997632_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mau-background-dep.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mau-background-dep1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnIn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnTimKiem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon Báo cáo . OK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO-VIB-Blue.ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO-VIB-Blue.ico1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
