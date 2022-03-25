@@ -23,6 +23,7 @@ namespace QLDA1
 
         public void LoadDataGridView()
         {
+
             string sql;
             sql = "select * from LuongTienTiepQuyLCN";
             tblTQLCN = functions.GetDataToTable(sql);
@@ -50,7 +51,7 @@ namespace QLDA1
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            FrmFldTransManaEdit f = new FrmFldTransManaEdit();
+            FrmFldTransManaAdd f = new FrmFldTransManaAdd();
             f.StartPosition = FormStartPosition.CenterScreen;
             f.ShowDialog();
             LoadDataGridView();

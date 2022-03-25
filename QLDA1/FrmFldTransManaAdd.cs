@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace QLDA1
 {
-    public partial class FrmFldTransManaEdit : Form
+    public partial class FrmFldTransManaAdd : Form
     {
-        public FrmFldTransManaEdit()
+        public FrmFldTransManaAdd()
         {
             InitializeComponent();
         }
@@ -23,7 +23,7 @@ namespace QLDA1
         {
             
             functions.Connect();
-            functions.FillCombo("SELECT * FROM ChiNhanh", cbbTenCN, "MaCN", "TenCN");
+            functions.FillCombo("select MaCN, TenCN from ChiNhanh", cbbTenCN, "MaCN", "TenCN");
             cbbTenCN.SelectedIndex = -1;
             functions.FillCombo("SELECT * FROM ChiNhanh", comboBox1, "MaCN", "TenCN");
             comboBox1.SelectedIndex = -1;
@@ -31,10 +31,6 @@ namespace QLDA1
             cbbTrangThai.SelectedIndex = -1;
             functions.FillCombo("SELECT * from GiaoDich", comboBox2, "MaGiaoDich", "MaGiaoDich");
             comboBox2.SelectedIndex = -1;
-            
-        }
-        private void TBNhapDayDu()
-        {
             
         }
 

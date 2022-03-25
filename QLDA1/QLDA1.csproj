@@ -38,6 +38,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -92,17 +93,23 @@
     <Compile Include="FrmFldNopRut.Designer.cs">
       <DependentUpon>FrmFldNopRut.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmFldDieuChuyenKhoEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFldDieuChuyenKhoEdit.Designer.cs">
+      <DependentUpon>FrmFldDieuChuyenKhoEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmFldTransManaEdit1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmFldTransManaEdit1.Designer.cs">
       <DependentUpon>FrmFldTransManaEdit1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmFldTransMana.cs">
+    <Compile Include="FrmFldTransManaAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmFldTransMana.Designer.cs">
-      <DependentUpon>FrmFldTransMana.cs</DependentUpon>
+    <Compile Include="FrmFldTransManaAdd.Designer.cs">
+      <DependentUpon>FrmFldTransManaAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmFldDieuChuyenQuy.cs">
       <SubType>Form</SubType>
@@ -163,11 +170,14 @@
     <EmbeddedResource Include="FrmFldNopRut.resx">
       <DependentUpon>FrmFldNopRut.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmFldDieuChuyenKhoEdit.resx">
+      <DependentUpon>FrmFldDieuChuyenKhoEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmFldTransManaEdit1.resx">
       <DependentUpon>FrmFldTransManaEdit1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmFldTransMana.resx">
-      <DependentUpon>FrmFldTransMana.cs</DependentUpon>
+    <EmbeddedResource Include="FrmFldTransManaAdd.resx">
+      <DependentUpon>FrmFldTransManaAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFldDieuChuyenQuy.resx">
       <DependentUpon>FrmFldDieuChuyenQuy.cs</DependentUpon>

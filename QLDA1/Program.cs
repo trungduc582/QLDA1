@@ -16,7 +16,7 @@ namespace QLDA1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmTransMana());
+            Application.Run(new FrmDieuChuyenTienKho());
         }
     }
 }

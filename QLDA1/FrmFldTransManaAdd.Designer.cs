@@ -1,6 +1,6 @@
 ﻿namespace QLDA1
 {
-    partial class FrmFldTransManaEdit
+    partial class FrmFldTransManaAdd
     {
         /// <summary>
         /// Required designer variable.
@@ -285,7 +285,7 @@
             this.btnHuy.UseVisualStyleBackColor = false;
             this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
-            // FrmFldTransManaEdit
+            // FrmFldTransManaAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -294,8 +294,8 @@
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.groupBox1);
-            this.Name = "FrmFldTransManaEdit";
-            this.Text = "FrmFldTransMana";
+            this.Name = "FrmFldTransManaAdd";
+            this.Text = "Thêm mới";
             this.Load += new System.EventHandler(this.FrmFldTransMana_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
