@@ -34,26 +34,49 @@ namespace QLDA1
         private void btnLuu_Click(object sender, EventArgs e)
         {
             
-            double amt, amt_change, amt_limit, amt_new ;
+            double amt, amt_change, amt_limit, amt_new1, amt_new2;
             sql = "SELECT MaKet, SoTien,HanMuc FROM Ket WHERE MaKet = '" + textBox1.Text.Trim() + "'";
             DataTable tblHang = functions.GetDataToTable(sql);
             amt = Convert.ToDouble(tblHang.Rows[0][1].ToString());
             amt_limit= Convert.ToDouble(tblHang.Rows[0][2].ToString());
             amt_change = Convert.ToDouble(textBox3.Text);
-            amt_new = amt + amt_change;
-            if(amt_new > amt_limit)
+            amt_new1 = amt + amt_change;
+            amt_new2 = amt - amt_change;
+
+            string a = functions.GetFieldValues($"select TranType from DieuChuyenKho where TranID='{txtMaGD.Text}'");
+            if (a == "0002")
             {
-                MessageBox.Show($"Số tiền vượt quá hạn mức, hạn mức còn lại là: {(amt_limit-amt)}" , "Thông báo");
-                return;
+                if (amt_new1 > amt_limit)
+                {
+                    MessageBox.Show($"Số tiền vượt quá hạn mức, hạn mức còn lại là: {(amt_limit - amt)}", "Thông báo");
+                    return;
+                }
+                else
+                {
+                    sql = $"update DieuChuyenKho set TranStatus='A' where TranID='{txtMaGD.Text.Trim()}'";
+                    functions.RunSQL(sql);
+                    sql = $"update ket set SoTien={amt_new1} where MaKet = '{textBox1.Text.Trim()}'";
+                    functions.RunSQL(sql);
+                    MessageBox.Show("Duyệt dữ liệu thành công", "Thông báo");
+                    this.Close();
+                }
             }
-            else
+            else if (a == "0001")
             {
-                sql = $"update DieuChuyenKho set TranStatus='A' where TranID='{txtMaGD.Text.Trim()}'";
-                functions.RunSQL(sql);
-                sql = $"update ket set SoTien={amt_new} where MaKet = '{textBox1.Text.Trim()}'";
-                functions.RunSQL(sql);
-                MessageBox.Show("Duyệt dữ liệu thành công", "Thông báo");
-                this.Close();
+                if (amt_new2 < 0)
+                {
+                    MessageBox.Show($"Số tiền còn lại trong két không đủ, hạn mức còn lại là: {(amt_limit - amt)}", "Thông báo");
+                    return;
+                }
+                else
+                {
+                    sql = $"update DieuChuyenKho set TranStatus='A' where TranID='{txtMaGD.Text.Trim()}'";
+                    functions.RunSQL(sql);
+                    sql = $"update ket set SoTien={amt_new2} where MaKet = '{textBox1.Text.Trim()}'";
+                    functions.RunSQL(sql);
+                    MessageBox.Show("Duyệt dữ liệu thành công", "Thông báo");
+                    this.Close();
+                }
             }
         }
 

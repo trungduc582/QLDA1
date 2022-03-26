@@ -22,9 +22,15 @@ namespace QLDA1
         private void btnLogin_Click(object sender, EventArgs e)
         {
             string sql;
-            sql = $"select * from userlogin where username ={txttk.Text.Trim()} and pwd ={txtpw.Text.Trim()}";
-            login = functions.GetDataToTable(sql);
-            if (login.Rows.Count == 0)
+            functions.Connect();
+            if(txttk.Text.Trim().Length==0 || txtpw.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("vui long nhap du thong tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            sql = $"select count(1) c from userlogin where username = '{txttk.Text.Trim()}' and pwd = '{txtpw.Text.Trim()}'";
+            
+            if (functions.GetFieldValues(sql)=="0")
             {
                 MessageBox.Show("sai tai khoan hoac mat khau!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;

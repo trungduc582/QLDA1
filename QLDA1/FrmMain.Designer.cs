@@ -109,7 +109,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackgroundImage = global::QLDA1.Properties.Resources.mau_background_dep1;
-            this.ClientSize = new System.Drawing.Size(1572, 505);
+            this.ClientSize = new System.Drawing.Size(1622, 616);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmMain";

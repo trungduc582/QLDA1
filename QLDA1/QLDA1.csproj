@@ -90,6 +90,12 @@
     <Compile Include="FrmFldDieuChuyenKhoAppr.Designer.cs">
       <DependentUpon>FrmFldDieuChuyenKhoAppr.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmFldDieuChuyenQuyEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFldDieuChuyenQuyEdit.Designer.cs">
+      <DependentUpon>FrmFldDieuChuyenQuyEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmFldHachToan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFldDieuChuyenKhoAppr.resx">
       <DependentUpon>FrmFldDieuChuyenKhoAppr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFldDieuChuyenQuyEdit.resx">
+      <DependentUpon>FrmFldDieuChuyenQuyEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFldHachToan.resx">
       <DependentUpon>FrmFldHachToan.cs</DependentUpon>

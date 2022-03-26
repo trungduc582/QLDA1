@@ -333,11 +333,11 @@ namespace QLDA1
             exRange.Range["A3:B3"].Value = "Điện thoại: (036)113541";
             exRange.Range["D2:K4"].Font.Size = 16;
             exRange.Range["D2:K4"].Font.Bold = true;
-            exRange.Range["D2:K4"].Font.ColorIndex = 3; //Màu đỏ
-            exRange.Range["D2:K4"].MergeCells = true;
-            exRange.Range["D2:K4"].WrapText = true;
-            exRange.Range["D2:K4"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
-            exRange.Range["D2:K4"].Value = "BÁO CÁO GIAO DỊCH CHUYỂN TIỀN TRONG - NGOÀI KHO" ;
+            exRange.Range["D2:K3"].Font.ColorIndex = 3; //Màu đỏ
+            exRange.Range["D2:K3"].MergeCells = true;
+            exRange.Range["D2:K3"].WrapText = true;
+            exRange.Range["D2:K3"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
+            exRange.Range["D2:K3"].Value = "BÁO CÁO GIAO DỊCH CHUYỂN TIỀN TRONG - NGOÀI KHO" ;
             exRange.Range["D5:K5"].Font.Size = 14;
             exRange.Range["D5:K5"].Font.Italic = true;
             exRange.Range["D5:K5"].MergeCells = true;
@@ -362,7 +362,7 @@ namespace QLDA1
             exRange.Range["I7:I7"].Value = "Trạng thái";
             exRange.Range["J7:J7"].Value = "Người duyệt";
             exRange.Range["K7:K7"].Value = "Ngày thực hiện";
-            for (phong = 0; phong < tblTQLCN.Rows.Count-1; phong++)
+            for (phong = 0; phong < tblTQLCN.Rows.Count; phong++)
             {
                 exSheet.Cells[2][phong + 8] = phong + 1;
                 for (cot = 0; cot < tblTQLCN.Columns.Count-1; cot++)
