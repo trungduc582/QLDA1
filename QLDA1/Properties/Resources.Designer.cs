@@ -19,7 +19,7 @@ namespace QLDA1.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -63,9 +63,9 @@ namespace QLDA1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _101543831_2815261611928947_2364246854972997632_n {
+        internal static System.Drawing.Bitmap appr {
             get {
-                object obj = ResourceManager.GetObject("101543831_2815261611928947_2364246854972997632_n", resourceCulture);
+                object obj = ResourceManager.GetObject("appr", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -86,6 +86,16 @@ namespace QLDA1.Properties {
         internal static System.Drawing.Bitmap btnIn {
             get {
                 object obj = ResourceManager.GetObject("btnIn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnLuu {
+            get {
+                object obj = ResourceManager.GetObject("btnLuu", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -136,6 +146,16 @@ namespace QLDA1.Properties {
         internal static System.Drawing.Bitmap btnXoa {
             get {
                 object obj = ResourceManager.GetObject("btnXoa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap file {
+            get {
+                object obj = ResourceManager.GetObject("file", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

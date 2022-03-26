@@ -95,5 +95,11 @@ namespace QLDA1
             MessageBox.Show("Cập nhật dữ liệu thành công","Thông báo");
             this.Close();
         }
+
+        private void mskAMT_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
     }
 }

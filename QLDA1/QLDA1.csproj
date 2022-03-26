@@ -35,6 +35,9 @@
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
@@ -80,6 +83,12 @@
     </Compile>
     <Compile Include="FrmFldDieuChuyenKho.Designer.cs">
       <DependentUpon>FrmFldDieuChuyenKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFldDieuChuyenKhoAppr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFldDieuChuyenKhoAppr.Designer.cs">
+      <DependentUpon>FrmFldDieuChuyenKhoAppr.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmFldHachToan.cs">
       <SubType>Form</SubType>
@@ -164,6 +173,9 @@
     <EmbeddedResource Include="FrmFldDieuChuyenKho.resx">
       <DependentUpon>FrmFldDieuChuyenKho.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmFldDieuChuyenKhoAppr.resx">
+      <DependentUpon>FrmFldDieuChuyenKhoAppr.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmFldHachToan.resx">
       <DependentUpon>FrmFldHachToan.cs</DependentUpon>
     </EmbeddedResource>
@@ -199,18 +211,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -261,6 +273,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LOGO-VIB-Blue.ico1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnLuu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appr.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

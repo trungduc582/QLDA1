@@ -1,6 +1,6 @@
 ﻿namespace QLDA1
 {
-    partial class FrmFldDieuChuyenKhoEdit
+    partial class FrmFldDieuChuyenKhoAppr
     {
         /// <summary>
         /// Required designer variable.
@@ -29,15 +29,17 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.mskAMT = new System.Windows.Forms.MaskedTextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtTranType = new System.Windows.Forms.TextBox();
             this.dtpFrom = new System.Windows.Forms.DateTimePicker();
-            this.cbbTransType = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.T_Emp = new System.Windows.Forms.ComboBox();
-            this.F_Emp = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.cbbccy = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,20 +47,24 @@
             this.txtMaGD = new System.Windows.Forms.TextBox();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.mskAMT);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtTranType);
             this.groupBox1.Controls.Add(this.dtpFrom);
-            this.groupBox1.Controls.Add(this.cbbTransType);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.T_Emp);
-            this.groupBox1.Controls.Add(this.F_Emp);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.cbbccy);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label3);
@@ -74,33 +80,80 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "TT chung";
             // 
-            // mskAMT
+            // textBox1
             // 
-            this.mskAMT.Location = new System.Drawing.Point(240, 385);
-            this.mskAMT.Name = "mskAMT";
-            this.mskAMT.Size = new System.Drawing.Size(234, 30);
-            this.mskAMT.TabIndex = 222;
-            this.mskAMT.ValidatingType = typeof(int);
-            this.mskAMT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mskAMT_KeyPress);
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(736, 173);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(234, 30);
+            this.textBox1.TabIndex = 228;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(663, 178);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(42, 22);
+            this.label2.TabIndex = 227;
+            this.label2.Text = "Két:";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Enabled = false;
+            this.textBox5.Location = new System.Drawing.Point(736, 281);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(234, 30);
+            this.textBox5.TabIndex = 226;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Enabled = false;
+            this.textBox4.Location = new System.Drawing.Point(736, 388);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(234, 30);
+            this.textBox4.TabIndex = 225;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Enabled = false;
+            this.textBox3.Location = new System.Drawing.Point(243, 385);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(234, 30);
+            this.textBox3.TabIndex = 224;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Enabled = false;
+            this.textBox2.Location = new System.Drawing.Point(240, 281);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(234, 30);
+            this.textBox2.TabIndex = 223;
+            // 
+            // txtTranType
+            // 
+            this.txtTranType.Enabled = false;
+            this.txtTranType.Location = new System.Drawing.Point(243, 173);
+            this.txtTranType.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTranType.Name = "txtTranType";
+            this.txtTranType.Size = new System.Drawing.Size(234, 30);
+            this.txtTranType.TabIndex = 222;
             // 
             // dtpFrom
             // 
+            this.dtpFrom.Enabled = false;
             this.dtpFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFrom.Location = new System.Drawing.Point(736, 74);
             this.dtpFrom.Name = "dtpFrom";
             this.dtpFrom.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dtpFrom.Size = new System.Drawing.Size(213, 30);
             this.dtpFrom.TabIndex = 221;
-            // 
-            // cbbTransType
-            // 
-            this.cbbTransType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbTransType.FormattingEnabled = true;
-            this.cbbTransType.Location = new System.Drawing.Point(240, 168);
-            this.cbbTransType.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cbbTransType.Name = "cbbTransType";
-            this.cbbTransType.Size = new System.Drawing.Size(234, 33);
-            this.cbbTransType.TabIndex = 220;
             // 
             // label9
             // 
@@ -112,26 +165,6 @@
             this.label9.Size = new System.Drawing.Size(126, 22);
             this.label9.TabIndex = 219;
             this.label9.Text = "Loại giao dịch:";
-            // 
-            // T_Emp
-            // 
-            this.T_Emp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.T_Emp.FormattingEnabled = true;
-            this.T_Emp.Location = new System.Drawing.Point(736, 281);
-            this.T_Emp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.T_Emp.Name = "T_Emp";
-            this.T_Emp.Size = new System.Drawing.Size(213, 33);
-            this.T_Emp.TabIndex = 218;
-            // 
-            // F_Emp
-            // 
-            this.F_Emp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.F_Emp.FormattingEnabled = true;
-            this.F_Emp.Location = new System.Drawing.Point(240, 275);
-            this.F_Emp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.F_Emp.Name = "F_Emp";
-            this.F_Emp.Size = new System.Drawing.Size(234, 33);
-            this.F_Emp.TabIndex = 217;
             // 
             // label8
             // 
@@ -155,16 +188,6 @@
             this.label10.Size = new System.Drawing.Size(91, 22);
             this.label10.TabIndex = 216;
             this.label10.Text = "Người gửi:";
-            // 
-            // cbbccy
-            // 
-            this.cbbccy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbccy.FormattingEnabled = true;
-            this.cbbccy.Location = new System.Drawing.Point(736, 385);
-            this.cbbccy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cbbccy.Name = "cbbccy";
-            this.cbbccy.Size = new System.Drawing.Size(213, 33);
-            this.cbbccy.TabIndex = 214;
             // 
             // label4
             // 
@@ -224,13 +247,13 @@
             this.btnLuu.AutoSize = true;
             this.btnLuu.BackColor = System.Drawing.SystemColors.MenuBar;
             this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.Image = global::QLDA1.Properties.Resources.btnLuu1;
-            this.btnLuu.Location = new System.Drawing.Point(358, 516);
+            this.btnLuu.Image = global::QLDA1.Properties.Resources.btnLuu;
+            this.btnLuu.Location = new System.Drawing.Point(313, 516);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(131, 44);
+            this.btnLuu.Size = new System.Drawing.Size(141, 44);
             this.btnLuu.TabIndex = 198;
-            this.btnLuu.Text = "Lưu";
+            this.btnLuu.Text = "Chấp nhận";
             this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLuu.UseVisualStyleBackColor = false;
@@ -242,29 +265,65 @@
             this.btnHuy.BackColor = System.Drawing.SystemColors.MenuBar;
             this.btnHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuy.Image = global::QLDA1.Properties.Resources.btnThoat;
-            this.btnHuy.Location = new System.Drawing.Point(586, 516);
+            this.btnHuy.Location = new System.Drawing.Point(900, 516);
             this.btnHuy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(131, 44);
             this.btnHuy.TabIndex = 197;
-            this.btnHuy.Text = "Hủy";
+            this.btnHuy.Text = "Trở về";
             this.btnHuy.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHuy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHuy.UseVisualStyleBackColor = false;
             this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
-            // FrmFldDieuChuyenKhoEdit
+            // button1
+            // 
+            this.button1.AutoSize = true;
+            this.button1.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = global::QLDA1.Properties.Resources.file;
+            this.button1.Location = new System.Drawing.Point(515, 516);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(141, 44);
+            this.button1.TabIndex = 199;
+            this.button1.Text = "Submit";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.AutoSize = true;
+            this.button2.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Image = global::QLDA1.Properties.Resources.btnHuy;
+            this.button2.Location = new System.Drawing.Point(713, 516);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(141, 44);
+            this.button2.TabIndex = 200;
+            this.button2.Text = "Từ chối";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // FrmFldDieuChuyenKhoAppr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1071, 597);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.groupBox1);
-            this.Name = "FrmFldDieuChuyenKhoEdit";
-            this.Text = "Điều chuyển tiền trong - ngoài kho";
-            this.Load += new System.EventHandler(this.FrmFldDieuChuyenKhoEdit_Load);
+            this.Name = "FrmFldDieuChuyenKhoAppr";
+            this.Text = "Approve";
+            this.Load += new System.EventHandler(this.FrmFldDieuChuyenKhoAppr_Load_1);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -278,18 +337,22 @@
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.DateTimePicker dtpFrom;
-        private System.Windows.Forms.ComboBox cbbTransType;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox T_Emp;
-        private System.Windows.Forms.ComboBox F_Emp;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox cbbccy;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtMaGD;
-        private System.Windows.Forms.MaskedTextBox mskAMT;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtTranType;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
     }
 }

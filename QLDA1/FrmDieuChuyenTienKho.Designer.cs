@@ -44,6 +44,8 @@
             this.cbbTransType = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnExpt = new System.Windows.Forms.Button();
             this.btnTk = new System.Windows.Forms.Button();
@@ -51,7 +53,6 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.GV2)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -230,6 +231,42 @@
             this.label1.TabIndex = 226;
             this.label1.Text = "CHUYỂN TIỀN TRONG - NGOÀI KHO";
             // 
+            // button2
+            // 
+            this.button2.AutoSize = true;
+            this.button2.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Image = global::QLDA1.Properties.Resources.appr;
+            this.button2.Location = new System.Drawing.Point(814, 432);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(136, 41);
+            this.button2.TabIndex = 228;
+            this.button2.Text = "Duyệt";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.AutoSize = true;
+            this.button1.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(615, 432);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(136, 41);
+            this.button1.TabIndex = 227;
+            this.button1.Text = "Refresh";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Cross;
@@ -247,7 +284,7 @@
             this.btnExpt.BackColor = System.Drawing.SystemColors.MenuBar;
             this.btnExpt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExpt.Image = global::QLDA1.Properties.Resources.icon_Báo_cáo___OK;
-            this.btnExpt.Location = new System.Drawing.Point(1123, 243);
+            this.btnExpt.Location = new System.Drawing.Point(1120, 291);
             this.btnExpt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnExpt.Name = "btnExpt";
             this.btnExpt.Size = new System.Drawing.Size(134, 41);
@@ -256,6 +293,7 @@
             this.btnExpt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExpt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnExpt.UseVisualStyleBackColor = false;
+            this.btnExpt.Click += new System.EventHandler(this.btnExpt_Click);
             // 
             // btnTk
             // 
@@ -263,7 +301,7 @@
             this.btnTk.BackColor = System.Drawing.SystemColors.MenuBar;
             this.btnTk.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTk.Image = global::QLDA1.Properties.Resources.btnTimKiem;
-            this.btnTk.Location = new System.Drawing.Point(1120, 156);
+            this.btnTk.Location = new System.Drawing.Point(1123, 195);
             this.btnTk.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnTk.Name = "btnTk";
             this.btnTk.Size = new System.Drawing.Size(134, 41);
@@ -280,7 +318,7 @@
             this.btnThoat.BackColor = System.Drawing.SystemColors.MenuBar;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.Image = global::QLDA1.Properties.Resources.btnHuy;
-            this.btnThoat.Location = new System.Drawing.Point(1126, 338);
+            this.btnThoat.Location = new System.Drawing.Point(1123, 432);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(131, 41);
@@ -314,7 +352,7 @@
             this.btnSua.BackColor = System.Drawing.SystemColors.MenuBar;
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.Image = global::QLDA1.Properties.Resources.btnSua;
-            this.btnSua.Location = new System.Drawing.Point(204, 432);
+            this.btnSua.Location = new System.Drawing.Point(217, 432);
             this.btnSua.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(136, 41);
@@ -331,7 +369,7 @@
             this.btnXoa.BackColor = System.Drawing.SystemColors.MenuBar;
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.Image = global::QLDA1.Properties.Resources.btnXoa;
-            this.btnXoa.Location = new System.Drawing.Point(389, 432);
+            this.btnXoa.Location = new System.Drawing.Point(416, 432);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(136, 41);
@@ -342,24 +380,6 @@
             this.btnXoa.UseVisualStyleBackColor = false;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
-            // button1
-            // 
-            this.button1.AutoSize = true;
-            this.button1.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(584, 432);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 41);
-            this.button1.TabIndex = 227;
-            this.button1.Text = "Refresh";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // FrmDieuChuyenTienKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -367,6 +387,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1283, 924);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -415,5 +436,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox cBBTranID;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
