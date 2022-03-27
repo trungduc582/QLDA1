@@ -119,9 +119,9 @@ namespace QLDA1
                 maskedTextBox12.Text = "0";
                 return;
             }
-            if (mskAMT.Text == "0")
+            if (Convert.ToDouble (mskAMT.Text) == 0)
             {
-                MessageBox.Show("Vui lòng nhập đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Giá trị giao dịch phải lớn hơn 0", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 maskedTextBox1.Focus();
                 return;
             }

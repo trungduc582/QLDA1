@@ -39,6 +39,8 @@
             this.cbbTrangThai = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.cbbTenCN = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnExpt = new System.Windows.Forms.Button();
@@ -49,8 +51,16 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -60,7 +70,7 @@
             // 
             this.cbbMarker.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbMarker.FormattingEnabled = true;
-            this.cbbMarker.Location = new System.Drawing.Point(617, 47);
+            this.cbbMarker.Location = new System.Drawing.Point(638, 48);
             this.cbbMarker.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbbMarker.Name = "cbbMarker";
             this.cbbMarker.Size = new System.Drawing.Size(197, 33);
@@ -133,7 +143,7 @@
             // 
             this.cbbTrangThai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbTrangThai.FormattingEnabled = true;
-            this.cbbTrangThai.Location = new System.Drawing.Point(617, 105);
+            this.cbbTrangThai.Location = new System.Drawing.Point(638, 106);
             this.cbbTrangThai.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbbTrangThai.Name = "cbbTrangThai";
             this.cbbTrangThai.Size = new System.Drawing.Size(197, 33);
@@ -143,6 +153,17 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8,
+            this.Column9,
+            this.Column10});
             this.dataGridView1.Location = new System.Drawing.Point(12, 436);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
@@ -169,10 +190,27 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox1.Size = new System.Drawing.Size(847, 216);
+            this.groupBox1.Size = new System.Drawing.Size(869, 216);
             this.groupBox1.TabIndex = 231;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nhập thông tin tìm kiếm";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(638, 171);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(197, 30);
+            this.dateTimePicker1.TabIndex = 231;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker2.Location = new System.Drawing.Point(169, 170);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dateTimePicker2.Size = new System.Drawing.Size(197, 30);
+            this.dateTimePicker2.TabIndex = 232;
             // 
             // cbbTenCN
             // 
@@ -313,22 +351,55 @@
             this.pictureBox1.TabIndex = 238;
             this.pictureBox1.TabStop = false;
             // 
-            // dateTimePicker1
+            // Column1
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(617, 170);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(197, 30);
-            this.dateTimePicker1.TabIndex = 231;
+            this.Column1.HeaderText = "Mã giao dịch";
+            this.Column1.Name = "Column1";
             // 
-            // dateTimePicker2
+            // Column2
             // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(169, 170);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dateTimePicker2.Size = new System.Drawing.Size(197, 30);
-            this.dateTimePicker2.TabIndex = 232;
+            this.Column2.HeaderText = "Người tạo";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Loại giao dịch";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Chi nhánh";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Tổng tiền";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Loại tiền";
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Trạng thái";
+            this.Column7.Name = "Column7";
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Người duyệt";
+            this.Column8.Name = "Column8";
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "Ngày thực hiện";
+            this.Column9.Name = "Column9";
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "Trạng thái gửi";
+            this.Column10.Name = "Column10";
             // 
             // FrmHachToan
             // 
@@ -382,5 +453,15 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
     }
 }

@@ -53,3 +53,4 @@ F:\QLDA\CSMN\QLDA1\obj\Debug\QLDA1.exe
 F:\QLDA\CSMN\QLDA1\obj\Debug\QLDA1.pdb
 F:\QLDA\CSMN\QLDA1\obj\Debug\QLDA1.csprojAssemblyReference.cache
 F:\QLDA\CSMN\QLDA1\obj\Debug\QLDA1.FrmFldDieuChuyenQuyEdit.resources
+F:\QLDA\CSMN\QLDA1\obj\Debug\QLDA1.FrmCanTienTeller.resources

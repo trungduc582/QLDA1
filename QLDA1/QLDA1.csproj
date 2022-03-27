@@ -60,6 +60,12 @@
     <Compile Include="FrmCanTien.Designer.cs">
       <DependentUpon>FrmCanTien.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCanTienTeller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCanTienTeller.Designer.cs">
+      <DependentUpon>FrmCanTienTeller.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmDieuChuyenQuy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +172,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmCanTien.resx">
       <DependentUpon>FrmCanTien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCanTienTeller.resx">
+      <DependentUpon>FrmCanTienTeller.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDieuChuyenQuy.resx">
       <DependentUpon>FrmDieuChuyenQuy.cs</DependentUpon>

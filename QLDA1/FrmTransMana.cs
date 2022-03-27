@@ -62,13 +62,13 @@ namespace QLDA1
         private void FrmTransMana_Load(object sender, EventArgs e)
         {
             functions.Connect();
-            functions.FillCombo("SELECT * FROM ChiNhanh", cbbTenCN, "MaCN", "TenCN");
+            functions.FillCombo("SELECT MaCNT FROM LuongTienTiepQuyLCN", cbbTenCN, "MaCNT", "MaCNT");
             cbbTenCN.SelectedIndex = -1;
-            functions.FillCombo("SELECT * FROM ChiNhanh", comboBox1, "MaCN", "TenCN");
+            functions.FillCombo("SELECT MaCNN FROM LuongTienTiepQuyLCN", comboBox1, "MaCNN", "MaCNN");
             comboBox1.SelectedIndex = -1;
-            functions.FillCombo("SELECT * from TrangThai", cbbTrangThai, "MaTrangThai", "TenTrangThai");
+            functions.FillCombo("SELECT TrangThai from LuongTienTiepQuyLCN", cbbTrangThai, "TrangThai", "TrangThai");
             cbbTrangThai.SelectedIndex = -1;
-            functions.FillCombo("SELECT * from GiaoDich", comboBox2, "MaGiaoDich", "MaGiaoDich");
+            functions.FillCombo("SELECT MaLTTQLCN from LuongTienTiepQuyLCN", comboBox2, "MaLTTQLCN", "MaLTTQLCN");
             LoadDataGridView();
             btnSua.Enabled = false;
             btnXoa.Enabled = false;

@@ -25,11 +25,11 @@ namespace QLDA1
             functions.Connect();
             functions.FillCombo("select MaCN, TenCN from ChiNhanh", cbbTenCN, "MaCN", "TenCN");
             cbbTenCN.SelectedIndex = -1;
-            functions.FillCombo("SELECT * FROM ChiNhanh", comboBox1, "MaCN", "TenCN");
+            functions.FillCombo("SELECT MaCN, TenCN FROM ChiNhanh", comboBox1, "MaCN", "TenCN");
             comboBox1.SelectedIndex = -1;
-            functions.FillCombo("SELECT * from TrangThai", cbbTrangThai, "MaTrangThai", "TenTrangThai");
+            functions.FillCombo("SELECT * from allcode where cdtype='TranStatus'", cbbTrangThai, "CDVal", "CDName");
             cbbTrangThai.SelectedIndex = -1;
-            functions.FillCombo("SELECT * from GiaoDich", comboBox2, "MaGiaoDich", "MaGiaoDich");
+            txtMaGD.Text = functions.CreateKey("TQLCN_");
             comboBox2.SelectedIndex = -1;
             
         }

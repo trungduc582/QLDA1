@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtHanMuc = new System.Windows.Forms.TextBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
@@ -53,7 +52,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtHanMuc);
             this.groupBox1.Controls.Add(this.dateTimePicker2);
@@ -79,18 +77,6 @@
             this.groupBox1.TabIndex = 196;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "TT chung";
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(476, 78);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(36, 31);
-            this.button1.TabIndex = 206;
-            this.button1.Text = "@";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -325,6 +311,5 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtHanMuc;
-        private System.Windows.Forms.Button button1;
     }
 }

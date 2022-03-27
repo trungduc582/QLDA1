@@ -117,35 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column7.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column8.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnThem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        v5+5/xxjlepvfmwbR3iJLvkAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAAAAAAAEAIABHSgAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAEAAAABAAgCAAAA0xA/MQAAAAFv
