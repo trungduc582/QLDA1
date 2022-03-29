@@ -30,6 +30,7 @@ TenCV Nvarchar (100));
 
 insert into ChucVu (MaCV,TenCV)
 values ('CV1','Trưởng phòng')
+--
 
 
 create table NhanVien(
