@@ -16,7 +16,7 @@ namespace QLDA1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmHachToan());
+            Application.Run(new FrmLogin());
         }
     }
 }
