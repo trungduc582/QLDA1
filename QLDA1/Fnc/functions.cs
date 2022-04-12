@@ -16,7 +16,7 @@ namespace QLDA1.Class
         public static void Connect()
         {
             //thiết lập giá trị cho chuỗi kết nối
-            connString = @"Data Source=YOGA-SLIM7-DUCN\SQLEXPRESS;Initial Catalog=QLDA;Integrated Security=True";
+            connString = @"Data Source=DESKTOP-5BQMFAN\SQLEXPRESS;Initial Catalog=QLDA1;Integrated Security=True";
             con = new SqlConnection();// cấp phát đối tượng
             con.ConnectionString = connString;
             //Thiết lập giá trị cho chuỗi kết nối

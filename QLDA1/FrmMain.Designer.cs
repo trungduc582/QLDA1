@@ -36,7 +36,9 @@
             this.mnuNopRut = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuCanTien = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuHachToan = new System.Windows.Forms.ToolStripMenuItem();
+            this.GV2 = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GV2)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -59,7 +61,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(1286, 36);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.UseWaitCursor = true;
             // 
             // mnuTrans
             // 
@@ -103,6 +104,18 @@
             this.mnuHachToan.Text = "Hạch toán thừa thiếu quỹ";
             this.mnuHachToan.Click += new System.EventHandler(this.mnuHachToan_Click);
             // 
+            // GV2
+            // 
+            this.GV2.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.GV2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GV2.Location = new System.Drawing.Point(0, 98);
+            this.GV2.Name = "GV2";
+            this.GV2.ReadOnly = true;
+            this.GV2.RowTemplate.Height = 28;
+            this.GV2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.GV2.Size = new System.Drawing.Size(706, 520);
+            this.GV2.TabIndex = 2;
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -110,12 +123,15 @@
             this.AutoSize = true;
             this.BackgroundImage = global::QLDA1.Properties.Resources.mau_background_dep1;
             this.ClientSize = new System.Drawing.Size(1622, 616);
+            this.Controls.Add(this.GV2);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmMain";
             this.Text = "Quản lý tiền mặt";
+            this.Load += new System.EventHandler(this.FrmMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GV2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -130,5 +146,6 @@
         private System.Windows.Forms.ToolStripMenuItem mnuNopRut;
         private System.Windows.Forms.ToolStripMenuItem mnuCanTien;
         private System.Windows.Forms.ToolStripMenuItem mnuHachToan;
+        private System.Windows.Forms.DataGridView GV2;
     }
 }
